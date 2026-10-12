@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A responsive Tailwind CSS component library challenge.">
+  <title>Tailwind Component Library</title>
+  <link rel="stylesheet" href="./dist/output.css">
+</head>
+
+<body id="top" class="min-h-screen bg-slate-50 text-slate-800 antialiased">
+
+  <main class="mx-auto max-w-6xl px-5 py-10 sm:py-14 lg:px-8">
+    <section id="alerts" class="scroll-mt-8 pt-14">
+      <div class="mb-6">
+        <p class="text-sm font-bold uppercase tracking-widest text-indigo-600">03 / Feedback</p>
+        <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Alerts</h2>
+        <p class="mt-2 max-w-2xl leading-7 text-slate-600">Four alert styles help users understand the status of an
+          action or message.</p>
+      </div>
+      <div class="space-y-4">
+        <div class="alert border-emerald-200 bg-emerald-50 text-emerald-900" role="status">
+          <span
+            class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-emerald-100 font-bold text-emerald-700"
+            aria-hidden="true">✓</span>
+          <div>
+            <h3 class="font-bold">Success</h3>
+            <p class="mt-1 text-sm leading-6">Your changes have been saved successfully.</p>
+          </div>
+        </div>
+        <div class="alert border-amber-200 bg-amber-50 text-amber-950" role="status">
+          <span
+            class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-amber-100 font-bold text-amber-700"
+            aria-hidden="true">!</span>
+          <div>
+            <h3 class="font-bold">Warning</h3>
+            <p class="mt-1 text-sm leading-6">Please review the information before continuing.</p>
+          </div>
+        </div>
+        <div class="alert border-rose-200 bg-rose-50 text-rose-950" role="alert">
+          <span
+            class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-rose-100 font-bold text-rose-700"
+            aria-hidden="true">×</span>
+          <div>
+            <h3 class="font-bold">Error</h3>
+            <p class="mt-1 text-sm leading-6">We could not complete your request. Please try again.</p>
+          </div>
+        </div>
+        <div class="alert border-sky-200 bg-sky-50 text-sky-950" role="status">
+          <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-sky-100 font-bold text-sky-700"
+            aria-hidden="true">i</span>
+          <div>
+            <h3 class="font-bold">Information</h3>
+            <p class="mt-1 text-sm leading-6">A new version of the component library is available.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-14">
+      <div class="rounded-2xl border border-slate-200 bg-white p-6 sm:p-8">
+        <p class="text-sm font-bold uppercase tracking-widest text-indigo-600">Design decision</p>
+        <h2 class="mt-2 text-xl font-bold text-slate-900">Why reusable classes?</h2>
+        <p class="mt-3 leading-7 text-slate-600">Tailwind utility classes are flexible for one-off designs. Reusable
+          classes with <code
+            class="rounded bg-slate-100 px-1.5 py-0.5 text-sm font-semibold text-indigo-700">@apply</code> reduce
+          repetition when the same component style is used many times. This project uses reusable classes for repeated
+          buttons, cards, and alerts.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mt-14 border-t border-slate-200 bg-white">
+    <div
+      class="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-7 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between lg:px-8">
+      <p>© 2026 ComponentLab · Tailwind CSS practice project</p>
+      <a class="font-semibold text-indigo-600 hover:text-indigo-800 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-indigo-600"
+        href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+
+</html>
