@@ -269,6 +269,9 @@
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
   :where(.space-y-4 > :not(:last-child)) {
     --tw-space-y-reverse: 0;
     margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
@@ -497,7 +500,7 @@
     align-items: center;
     justify-content: center;
     border-radius: var(--radius-xl);
-    background-color: var(--color-indigo-600);
+    background-color: var(--color-slate-600);
     padding-inline: calc(var(--spacing) * 5);
     padding-block: calc(var(--spacing) * 3);
     font-size: var(--text-sm);
@@ -546,7 +549,7 @@
     align-items: center;
     justify-content: center;
     border-radius: var(--radius-xl);
-    background-color: var(--color-slate-900);
+    background-color: var(--color-slate-600);
     padding-inline: calc(var(--spacing) * 5);
     padding-block: calc(var(--spacing) * 3);
     font-size: var(--text-sm);
@@ -563,7 +566,7 @@
     transition-duration: 200ms;
     &:hover {
       @media (hover: hover) {
-        background-color: var(--color-slate-700);
+        background-color: var(--color-indigo-700);
       }
     }
     &:focus-visible {
