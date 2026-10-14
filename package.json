@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch",
-    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --minify"
+    "dev": "node init && npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "node init && npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --minify"
   },
   "devDependencies": {
     "tailwindcss": "^4.1.0",
